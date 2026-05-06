@@ -17,12 +17,14 @@ const getSum = () => {
   const row = document.createElement('tr');
 
 
-  const column = document.createElement('td');
+  const column1 = document.createElement('td');
 
-  column.colSpan = 2; // span across table
-  column.textContent = "Total: " + sum;
-
-  row.appendChild(column);
+  // column.colSpan = 2; // span across table
+  column1.textContent = "Total: " ;
+  const column2 = document.createElement('td');
+  column2.textContent = sum;
+  row.appendChild(column1);
+	row.appendChild(column2);
 
   const table = document.querySelector('table');
   table.appendChild(row);
